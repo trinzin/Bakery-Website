@@ -1,6 +1,4 @@
-source 'https://rubygems.org' do
+source 'http://rubygems.org'
 
-  gem 'sinatra'
-  gem 'sinatra-contrib'
-
-end
+gem 'sinatra'
+gem 'sinatra-contrib'

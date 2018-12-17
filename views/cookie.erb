@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>about</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="img.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+<h1>Welcome to cookie land</h1>
+
+<div class="card-group">
+
+<% for items in @@cookies do %>
+
+  <div class="card">
+    <img class="card-img-top size_img"  src="<%=items.img%>" alt="Card image cap">
+    <div class="card-body">
+      
+      
+      <h5 class="card-title"><%= items.name %></h5>
+
+
+      <p class="card-text">Price:$ <%=items.price%></p>
+      <p><%=items.description%></p>
+  
+    </div>
+  </div>
+  <%end%>
+
+</div>
+
+</div>
+
+<div>
+<br>
+<br>
+<br>
+</div>
+  
+</body>
+</html>
